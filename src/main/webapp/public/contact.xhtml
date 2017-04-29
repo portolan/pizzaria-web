@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition template="/layout.xhtml">
+        <ui:define name="content">
+            <div class="commerzfree-template">
+                <h1>Contato</h1>
+
+                <div>
+                    <div class="alert alert-success" role="alert" id="alerta-sucesso" style="display: none; ">Mensagem enviada com sucesso!</div>
+                    <div>
+                        <label for="basic-url">Nome Completo</label>                                        
+                        <input type="text" class="form-control" aria-describedby="basic-addon2"></input>                        
+                    </div>    
+
+                    <div>
+                        <label for="basic-url">Site</label>
+                        <div class="input-group text_normal">
+                            <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+                            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"></input>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="basic-url">E-mail</label>                                        
+                        <input type="text" class="form-control" placeholder="Seu E-mail" aria-describedby="basic-addon2"></input>
+                    </div>
+
+                    <div>
+                        <label for="basic-url">Assunto</label>                                        
+                        <input type="text" class="form-control" aria-describedby="basic-addon2"></input>                        
+                    </div>    
+
+
+                    <div>
+                        <label for="basic-url">Mensagem</label>                                        
+                        <textarea class="form-control" placeholer="Message"></textarea>
+                    </div>    
+
+                    <div>
+                        <a class="btn btn-primary btn-lg text_normal" role="button" onclick="document.getElementById('alerta-sucesso').style.display = 'inherit'">Enviar</a>
+                    </div>                
+                </div>                
+            </div>
+        </ui:define>
+    </ui:composition>
+</html>
+
